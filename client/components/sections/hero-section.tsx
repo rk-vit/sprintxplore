@@ -24,18 +24,11 @@ export default function HeroSection() {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-50 via-white to-red-50/30">
-      {/* Background Elements - Enhanced Mobile Animation */}
+      {/* Background Elements - Keep gradient for all devices */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-10 left-5 w-48 h-48 md:w-72 md:h-72 md:top-20 md:left-10 bg-red-500/20 md:bg-red-500/10 rounded-full blur-3xl animate-pulse"></div>
         <div className="absolute bottom-10 right-5 w-64 h-64 md:w-96 md:h-96 md:bottom-20 md:right-10 bg-yellow-400/20 md:bg-yellow-400/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 md:w-[600px] md:h-[600px] bg-gradient-to-r from-red-500/15 to-yellow-400/15 md:from-red-500/5 md:to-yellow-400/5 rounded-full blur-3xl animate-pulse delay-500"></div>
-
-        {/* Enhanced Mobile background animation */}
-        {isMobile && (
-          <div className="absolute inset-0 flex items-center justify-center opacity-30 md:hidden scale-90">
-            <ImprovedHeroAnimation />
-          </div>
-        )}
       </div>
 
       <div className="container relative z-10 mx-auto px-4 md:px-6 pt-16 md:pt-20 w-full max-w-7xl">
@@ -104,9 +97,12 @@ export default function HeroSection() {
               </ScrollAnimation>
             </div>
           </ScrollAnimation>
-          <div className="hidden md:flex items-center justify-center">
-            <ImprovedHeroAnimation />
-          </div>
+          {/* Hero animation - Only show on desktop */}
+          {!isMobile && (
+            <div className="hidden md:flex items-center justify-center">
+              <ImprovedHeroAnimation />
+            </div>
+          )}
         </div>
       </div>
 
