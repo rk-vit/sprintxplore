@@ -99,7 +99,7 @@ export default function InternshipPopup() {
                     Apply Now
                   </button>
                   <button
-                    onClick={closePopup}
+                    onClick={handleApplyNow}
                     className="flex-1 border-2 border-gray-300 hover:border-red-600 hover:text-red-600 text-gray-700 px-6 py-3 rounded-lg font-semibold transition-all duration-300"
                   >
                     Learn More

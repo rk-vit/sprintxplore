@@ -4,19 +4,19 @@ import ScrollAnimation from "@/components/scroll-animation"
 export default function TeamSection() {
   const teamMembers = [
     {
-      name: "Jane Doe",
+      name: "Sakthivel",
       position: "CEO & Founder",
       image: "/placeholder.svg?height=400&width=400",
       bio: "With over 15 years of experience in tech education and software development.",
     },
     {
-      name: "John Smith",
+      name: "Akshaya",
       position: "CTO",
       image: "/placeholder.svg?height=400&width=400",
       bio: "Expert in cloud architecture and emerging technologies with a passion for teaching.",
     },
     {
-      name: "Emily Johnson",
+      name: "Pragadeeswari",
       position: "Head of Education",
       image: "/placeholder.svg?height=400&width=400",
       bio: "Curriculum development specialist with a background in computer science education.",
