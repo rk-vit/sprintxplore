@@ -8,6 +8,7 @@ import TeamSection from "@/components/sections/team-section"
 import ProjectsSection from "@/components/sections/projects-section"
 import CoursesSection from "@/components/sections/courses-section"
 import ContactSection from "@/components/sections/contact-section"
+import InternshipPopup from "@/components/internship-popup"
 
 export default function Home() {
   const [isMobile, setIsMobile] = useState(false)
@@ -35,6 +36,8 @@ export default function Home() {
       <ProjectsSection />
       <CoursesSection />
       <ContactSection />
+      {/* Internship Popup */}
+      <InternshipPopup />
     </div>
   )
 }

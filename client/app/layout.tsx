@@ -5,14 +5,18 @@ import { Inter } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
+import ThemeInitializer from "@/components/ui/themeInitializer"
+import { Head } from "react-day-picker"
 
 const inter = Inter({ subsets: ["latin"] })
-
 export const metadata: Metadata = {
   title: "SprintXplore - Innovative EdTech Solutions",
   description: "SprintXplore offers cutting-edge tech education, software development, and digital solutions.",
-    generator: 'v0.dev'
+  icons: {
+    icon: "/favicon.svg",
+  },
 }
+
 
 export default function RootLayout({
   children,
@@ -21,12 +25,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
-          <Header />
-          {children}
-          <Footer />
-        </ThemeProvider>
+      <body>  
+        <Header/>
+        <ThemeInitializer />
+        {children}
       </body>
     </html>
   )
