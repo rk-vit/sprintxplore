@@ -9,6 +9,7 @@ import ProjectsSection from "@/components/sections/projects-section"
 import CoursesSection from "@/components/sections/courses-section"
 import ContactSection from "@/components/sections/contact-section"
 import InternshipPopup from "@/components/internship-popup"
+import { Analytics } from "@vercel/analytics/next"
 
 export default function Home() {
   const [isMobile, setIsMobile] = useState(false)
@@ -28,6 +29,7 @@ export default function Home() {
 
   return (
     <div className="flex min-h-screen flex-col overflow-x-hidden">
+      <Analytics/>
       <HeroSection />
       <AboutSection />
       <VisionMissionSection />

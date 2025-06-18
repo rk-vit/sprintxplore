@@ -6,7 +6,7 @@ import Link from "next/link"
 import { ArrowLeft, ExternalLink, Phone } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import ScrollAnimation from "@/components/scroll-animation"
-
+import { Analytics } from "@vercel/analytics/next"
 export default function InternshipPage() {
   const [showContact, setShowContact] = useState(false)
 
