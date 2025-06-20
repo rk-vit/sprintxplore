@@ -6,7 +6,6 @@ import Link from "next/link"
 import { ArrowLeft, ExternalLink, Phone } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import ScrollAnimation from "@/components/scroll-animation"
-import { Analytics } from "@vercel/analytics/next"
 export default function InternshipPage() {
   const [showContact, setShowContact] = useState(false)
 
@@ -14,7 +13,7 @@ export default function InternshipPage() {
   const gformUrl = "https://docs.google.com/forms/d/e/1FAIpQLSeDtNCI-17v5y8HvuBNmH9kwHVHhqKid9JjgNOe24oU1Tas_A/viewform"
 
   // Phone number to display
-  const phoneNumber = "+91 9677217450"
+  const phoneNumber = "+91 72009 79461"
 
   return (
     <div className="min-h-screen pt-20 pb-16">

@@ -42,12 +42,12 @@ export default function HeroSection() {
                   </div>
                 </ScrollAnimation>
                 <ScrollAnimation delay={0.4}>
-                  <h1 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl leading-tight">
-                    Accelerate Your
+                  <h1 className="text-xl font-bold tracking-tight sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl leading-tight">
+                    Empowering Innovation
                     <br />
                     <span className="relative">
                       <span className="bg-gradient-to-r from-red-600 via-red-500 to-yellow-500 bg-clip-text text-transparent">
-                        Tech Journey
+                        Enabling Possibility.
                       </span>
                       <div className="absolute -bottom-1 md:-bottom-2 left-0 right-0 h-0.5 md:h-1 bg-gradient-to-r from-red-600 to-yellow-500 rounded-full transform scale-x-0 animate-[scaleX_2s_ease-in-out_1s_forwards]"></div>
                     </span>
@@ -55,8 +55,7 @@ export default function HeroSection() {
                 </ScrollAnimation>
                 <ScrollAnimation delay={0.6}>
                   <p className="max-w-[600px] text-lg md:text-xl text-gray-600 leading-relaxed">
-                    Empowering the next generation through innovative tech education, cutting-edge software development,
-                    and transformative digital solutions.
+                    Build smarter, faster, and with purpose. From GenAI to low-code/no-code development, we equip learners and creators with the tools to lead in tomorrow's digital world.
                   </p>
                 </ScrollAnimation>
               </div>
@@ -66,7 +65,7 @@ export default function HeroSection() {
                     size="lg"
                     className="bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white px-6 py-3 md:px-8 md:py-4 text-base md:text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 w-full sm:w-auto"
                   >
-                    Explore Courses
+                    Get a Quote
                     <ArrowRight className="ml-2 h-4 w-4 md:h-5 md:w-5" />
                   </Button>
                   <Button
@@ -74,12 +73,14 @@ export default function HeroSection() {
                     variant="outline"
                     className="border-2 border-gray-300 hover:border-red-600 hover:text-red-600 px-6 py-3 md:px-8 md:py-4 text-base md:text-lg font-semibold transition-all duration-300 w-full sm:w-auto"
                   >
-                    View Projects
+                    Talk to Us
                     <ChevronRight className="ml-2 h-4 w-4 md:h-5 md:w-5" />
                   </Button>
                 </div>
               </ScrollAnimation>
+              {/*
               <ScrollAnimation delay={1}>
+              
                 <div className="flex items-center justify-between sm:justify-start sm:space-x-8 pt-4 w-full">
                   <div className="text-center">
                     <div className="text-2xl md:text-3xl font-bold text-gray-900">500+</div>
@@ -94,7 +95,9 @@ export default function HeroSection() {
                     <div className="text-xs md:text-sm text-gray-600">Success Rate</div>
                   </div>
                 </div>
+                
               </ScrollAnimation>
+              */}
             </div>
           </ScrollAnimation>
           {/* Hero animation - Only show on desktop */}

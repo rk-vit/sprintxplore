@@ -34,11 +34,9 @@ export default function VisionMissionSection() {
                     <line x1="8" y1="12" x2="16" y2="12" />
                   </svg>
                 </div>
-                <h3 className="mb-3 text-lg md:text-xl font-bold">Our Vision</h3>
+                <h3 className="mb-8 text-lg md:text-2xl font-bold">Our Vision</h3>
                 <p className="text-sm md:text-base text-gray-600">
-                  To be the leading force in tech education, empowering individuals with the skills and knowledge to
-                  innovate and excel in the rapidly evolving digital landscape. We envision a world where quality tech
-                  education is accessible to all, fostering a generation of problem-solvers and creators.
+                  To democratize technology by empowering individuals and organizations with intuitive, intelligent, and inclusive digital tools — redefining how the world builds, learns, and scales innovation.
                 </p>
               </div>
             </ScrollAnimation>
@@ -63,10 +61,7 @@ export default function VisionMissionSection() {
                 </div>
                 <h3 className="mb-3 text-lg md:text-xl font-bold">Our Mission</h3>
                 <p className="text-sm md:text-base text-gray-600">
-                  To deliver exceptional tech education and solutions that bridge the gap between academic learning and
-                  industry requirements. We are committed to creating innovative learning experiences, developing
-                  cutting-edge software, and building products that make a meaningful impact on businesses and
-                  individuals alike.
+                   To design and deliver transformative platforms that make software development accessible to everyone — from aspiring students to growing enterprises — through the power of low-code/no-code technologies, AI-driven innovation, and education-first engineering.
                 </p>
               </div>
             </ScrollAnimation>

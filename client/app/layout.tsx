@@ -10,8 +10,8 @@ import { Head } from "react-day-picker"
 
 const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
-  title: "SprintXplore - Innovative EdTech Solutions",
-  description: "SprintXplore offers cutting-edge tech education, software development, and digital solutions.",
+  title: "Sprintxplore | Fast-track your digital transformation journey!",
+  description: "Sprintxplore offers intelligent digital ecosystems that empower creators, teams, and businesses to explore, design, and deploy innovative solutions.",
   icons: {
     icon: "/favicon.svg",
   },

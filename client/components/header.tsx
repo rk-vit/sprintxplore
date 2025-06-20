@@ -77,25 +77,11 @@ export default function Header() {
               About
             </Link>
             <Link
-              href="#vision-mission"
-              className="text-sm font-medium transition-colors hover:text-red-600"
-              onClick={(e) => smoothScroll(e, "#vision-mission")}
-            >
-              Vision & Mission
-            </Link>
-            <Link
               href="#technologies"
               className="text-sm font-medium transition-colors hover:text-red-600"
               onClick={(e) => smoothScroll(e, "#technologies")}
             >
               Technologies
-            </Link>
-            <Link
-              href="#team"
-              className="text-sm font-medium transition-colors hover:text-red-600"
-              onClick={(e) => smoothScroll(e, "#team")}
-            >
-              Team
             </Link>
             <Link
               href="#projects"

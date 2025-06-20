@@ -16,15 +16,10 @@ export default function AboutSection() {
             <ScrollAnimation direction="left" delay={0.2}>
               <div className="flex flex-col justify-center space-y-4">
                 <p className="text-base md:text-lg text-gray-600">
-                  SprintXplore Infotech Private Limited is a dynamic edtech company dedicated to bridging the gap
-                  between theoretical knowledge and practical industry requirements. Founded with a vision to transform
-                  tech education, we offer cutting-edge courses, develop innovative software solutions, and build
-                  products that solve real-world problems.
+                  Sprintxplore Infotech Private Limited is a next-gen digital solutions and learning company empowering creators, learners, and businesses with innovative tech, AI, and automation. From building low-code/no-code full-stack platforms to simplifying the power of GenAI for real-world use, we are on a mission to make technology accessible, meaningful, and impactful.
                 </p>
                 <p className="text-base md:text-lg text-gray-600">
-                  Our team of industry experts and educators brings years of experience to create learning experiences
-                  that are engaging, relevant, and future-focused. We believe in learning by doing, which is why our
-                  courses emphasize hands-on projects and real-world applications.
+                  Founded with a passion to democratize software development and AI education, we blend practical learning with industry-grade products that are designed to empower both individuals and institutions. We also collaborate with academic and enterprise partners to build value-driven solutions.
                 </p>
               </div>
             </ScrollAnimation>
