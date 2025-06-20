@@ -22,7 +22,7 @@ export default function ContactSection() {
       ),
       bgColor: "bg-red-100",
       title: "Phone",
-      content: "+91 (Contact Number)",
+      content: "+91 63852 80525",
     },
     {
       icon: (
@@ -89,7 +89,7 @@ export default function ContactSection() {
       ),
       bgColor: "bg-yellow-100",
       title: "LinkedIn",
-      content: "@sprintxplore",
+      content: "@sprintxplore infotech Pvt Ltd",
     },
   ]
 

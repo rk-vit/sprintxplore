@@ -2,28 +2,53 @@ import { ArrowRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import ProjectCard from "@/components/project-card"
 import ScrollAnimation from "@/components/scroll-animation"
+import { title } from "process"
+import React, { MouseEvent } from "react"
 
 export default function ProjectsSection() {
   const projects = [
     {
-      title: "EduTech Platform",
-      description: "A comprehensive learning management system for educational institutions.",
+      title: "Hacklido",
+      description: "A community-powered platform for ethical hackers and cybersecurity enthusiasts to share, learn, and grow.",
       image: "/placeholder.svg?height=300&width=400",
       technologies: ["React", "Node.js", "MongoDB"],
+      link:"https://hacklido.com/"
     },
     {
-      title: "HealthTrack App",
-      description: "Mobile application for tracking health metrics and providing personalized insights.",
+      title: "Sri Ramanujar Illam",
+      description: "A digital platform supporting humanitarian, cultural, and community service initiatives",
       image: "/placeholder.svg?height=300&width=400",
       technologies: ["Flutter", "Firebase", "TensorFlow"],
+      link:"https://sriramanujarillam.org/"
     },
     {
       title: "SmartRetail Solution",
-      description: "AI-powered inventory management system for retail businesses.",
+      description: "A dermatology clinic website with intuitive booking, responsive design, and SEO-first performance",
       image: "/placeholder.svg?height=300&width=400",
       technologies: ["Python", "TensorFlow", "AWS"],
+      link:"https://www.coimbatoredermalcenter.in"
     },
+    {
+      title: "Velammal TPO Automation Suite",
+      description: " A tool that automates placement cell workflows, simplifying student-company mapping, reports, and communication.",
+      image: "/placeholder.svg?height=300&width=400",
+      technologies: ["Python", "TensorFlow", "AWS"],
+      link:""
+    },
+    {
+      title: "DineXQ – Smart Canteen Management",
+      description: " Our in-house SaaS product that digitizes institutional dining and food order management for real-time insights.",
+      image: "/placeholder.svg?height=300&width=400",
+      technologies: ["Python", "TensorFlow", "AWS"],
+      link:""
+    }
   ]
+
+  const smoothScroll = (e: React.MouseEvent<Element>, target: string) => {
+  e.preventDefault(); // if you're preventing navigation
+  document.querySelector(target)?.scrollIntoView({ behavior: "smooth" });
+};
+
 
   return (
     <section id="projects" className="bg-white py-12 md:py-16 lg:py-24 overflow-hidden">
@@ -44,6 +69,7 @@ export default function ProjectsSection() {
                   description={project.description}
                   image={project.image}
                   technologies={project.technologies}
+                  link={project.link}
                 />
               </ScrollAnimation>
             ))}

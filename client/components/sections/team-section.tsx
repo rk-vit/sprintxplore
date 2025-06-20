@@ -1,25 +1,62 @@
 import TeamMember from "@/components/team-member"
 import ScrollAnimation from "@/components/scroll-animation"
 
+/*
+ Lead Developer
+ Specializes in full-stack systems, performance optimization, and delivering scalable solutions that power our core platforms.
+Naveen Kumar S
+ Research Analyst
+ Focuses on research, insights, and product validation to ensure Sprintxplore’s offerings are data-backed and future-aligned.
+
+
+*/
 export default function TeamSection() {
   const teamMembers = [
+    {
+      name: "Dr. Umamaheswaran S K",
+      position: "Senior Executive Advisor",
+      image: "/placeholder.svg?height=400&width=400",
+      bio: "A senior professor at Sri Sairam Engineering College with over 20 years of professional experience, he serves as our advisor to guide academic integration and educational impact.",
+    },
     {
       name: "Sakthivel",
       position: "CEO & Founder",
       image: "/placeholder.svg?height=400&width=400",
-      bio: "With over 15 years of experience in tech education and software development.",
+      bio: "Passionate about accessible tech and AI-powered solutions, he leads the mission to enable youth and businesses through smart innovation.",
     },
     {
-      name: "Akshaya",
-      position: "CTO",
+      name: " Sunil Selvaraj",
+      position: " Vice President – Marketing",
       image: "/placeholder.svg?height=400&width=400",
-      bio: "Expert in cloud architecture and emerging technologies with a passion for teaching.",
+      bio: " A growth-driven storyteller who blends strategy, branding, and outreach to expand Sprintxplore’s presence and community impact.",
     },
     {
-      name: "Pragadeeswari",
-      position: "Head of Education",
+      name: "Akshaya Saravanavaithy",
+      position: " AVP – Operations",
       image: "/placeholder.svg?height=400&width=400",
-      bio: "Curriculum development specialist with a background in computer science education.",
+      bio: " She ensures our operational flows run smoothly while maintaining quality, timelines, and coordination across projects and partnerships.",
+    },
+    {
+      name: "Pragadeeswari Gurunathan",
+      position: "AVP – Product & Technology",
+      image: "/placeholder.svg?height=400&width=400",
+      bio: " Drives innovation in our tech platforms, bridging code with usability through system architecture, feature design, and product R&D.",
+    },
+    {
+      name: "Logadeepak Kandasamy",
+      position: " Head of GenAI & Applications",
+      image: "/placeholder.svg?height=400&width=400",
+      bio: "Architects our GenAI capabilities, enabling users to interact with complex AI systems through simplified and educational interfaces.",
+    },{
+      name: "Revanth Kanna M",
+      position: "Lead Developer",
+      image: "/placeholder.svg?height=400&width=400",
+      bio: "Specializes in full-stack systems, performance optimization, and delivering scalable solutions that power our core platforms.",
+    },{
+      name: "Naveen Kumar S",
+      position: " Research Analyst",
+      image: "/placeholder.svg?height=400&width=400",
+      bio: "Focuses on research, insights, and product validation to ensure Sprintxplore’s offerings are data-backed and future-aligned.",
     },
   ]
 

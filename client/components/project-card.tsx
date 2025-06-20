@@ -9,9 +9,10 @@ interface ProjectCardProps {
   description: string
   image: string
   technologies: string[]
+  link:string
 }
 
-export default function ProjectCard({ title, description, image, technologies }: ProjectCardProps) {
+export default function ProjectCard({ title, description, image, technologies,link }: ProjectCardProps) {
   return (
     <motion.div
       className="group overflow-hidden rounded-xl bg-white shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"
@@ -28,7 +29,10 @@ export default function ProjectCard({ title, description, image, technologies }:
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
         <div className="absolute bottom-0 right-0 p-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
           <div className="rounded-full bg-white p-2 shadow-lg">
-            <ArrowUpRight className="h-5 w-5 text-red-600" />
+            <a href= {link}  target="_blank" rel="noopener noreferrer">
+              <ArrowUpRight className="h-5 w-5 text-red-600" />
+            </a>
+            
           </div>
         </div>
       </div>

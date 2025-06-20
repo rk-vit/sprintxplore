@@ -7,42 +7,50 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { motion } from "framer-motion"
+import { Target } from "lucide-react"
 
 export default function ContactForm() {
-  const [formState, setFormState] = useState({
-    name: "",
-    email: "",
-    subject: "",
-    message: "",
-  })
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSubmitted, setIsSubmitted] = useState(false)
+  const[name,setName]=useState("");
+  const[email,setEmail]=useState("");
+  const[subject,setSubject]=useState("");
+  const[message,setMessage]=useState("");
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target
-    setFormState((prev) => ({ ...prev, [name]: value }))
-  }
 
-  const handleSubmit = (e: React.FormEvent) => {
+
+
+
+  const handleSubmit = async(e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
-
+    
     // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false)
-      setIsSubmitted(true)
-      setFormState({
-        name: "",
-        email: "",
-        subject: "",
-        message: "",
+    try{
+      const res = await fetch("/api/contact",{
+        method:"POST",
+        headers:{
+          "Content-Type":"application/json"
+        },
+        body:JSON.stringify({
+          name,
+          email,
+          subject,
+          message
+        })
       })
-
+      if(res.ok){
+        setIsSubmitting(false)
+        setIsSubmitted(true)
+      }
+    }catch(err){
+      console.log(err)
+    }
       // Reset success message after 5 seconds
       setTimeout(() => {
         setIsSubmitted(false)
       }, 5000)
-    }, 1500)
+    
   }
 
   return (
@@ -88,8 +96,7 @@ export default function ContactForm() {
             <Input
               id="name"
               name="name"
-              value={formState.name}
-              onChange={handleChange}
+              onChange={(e)=>{setName(e.target.value)}}
               placeholder="Your name"
               required
             />
@@ -102,8 +109,7 @@ export default function ContactForm() {
               id="email"
               name="email"
               type="email"
-              value={formState.email}
-              onChange={handleChange}
+              onChange={(e)=>{setEmail(e.target.value)}}
               placeholder="your.email@example.com"
               required
             />
@@ -115,8 +121,7 @@ export default function ContactForm() {
             <Input
               id="subject"
               name="subject"
-              value={formState.subject}
-              onChange={handleChange}
+              onChange={(e)=>{setSubject(e.target.value)}}
               placeholder="How can we help you?"
               required
             />
@@ -128,8 +133,7 @@ export default function ContactForm() {
             <Textarea
               id="message"
               name="message"
-              value={formState.message}
-              onChange={handleChange}
+              onChange={(e)=>{setMessage(e.target.value)}}
               placeholder="Your message..."
               rows={4}
               required
