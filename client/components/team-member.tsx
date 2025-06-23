@@ -18,7 +18,7 @@ export default function TeamMember({ name, position, image, bio }: TeamMemberPro
       whileHover={{ scale: 1.02 }}
       transition={{ duration: 0.3 }}
     >
-      <div className="relative h-64 w-full overflow-hidden">
+      <div className="relative w-full aspect-[2/3] overflow-hidden rounded-lg">
         <Image
           src={image || "/placeholder.svg"}
           alt={name}
